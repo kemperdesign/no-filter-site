@@ -62,13 +62,12 @@ export default async function Home() {
           </div>
         </nav>
 
-        <h1 className="mega disp" aria-label="No Filter">
-          <span>No</span>
-          <span className="l2">Filter</span>
-        </h1>
-
-        <div className="hero-row">
-          <div className="hero-copy">
+        <div className="hero-grid">
+          <div className="hero-left">
+            <h1 className="mega disp" aria-label="No Filter">
+              <span>No</span>
+              <span className="l2">Filter</span>
+            </h1>
             <p className="tag">{s.tagline}</p>
             <div className="btns">
               <a className="btn solid" href="#shows">See the next show</a>

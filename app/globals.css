@@ -26,7 +26,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 /* nav */
 .nav { display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: center; justify-content: space-between; padding: 22px 0; border-bottom: 3px solid var(--ink); }
-.nav .brand { font-size: 30px; text-decoration: none; line-height: 1; }
+.nav .brand { display: block; line-height: 0; }
+.nav .brand img { height: 56px; width: auto; display: block; }
 .nav .links { display: flex; flex-wrap: wrap; gap: 4px 26px; align-items: center; font-size: 15px; }
 .nav .links a { text-decoration: none; padding: 10px 0; border-bottom: 2px solid transparent; }
 .nav .links a:hover { border-color: var(--ink); }
@@ -109,7 +110,7 @@ h2.big { font-size: clamp(56px, 9vw, 130px); }
 .gallery figure:nth-child(odd) { transform: rotate(-1.2deg); }
 .gallery figure:nth-child(even) { transform: rotate(1.1deg); }
 .gallery figure::before { content: ''; position: absolute; top: -14px; left: 50%; width: 92px; height: 26px; margin-left: -46px; background: rgba(210,205,190,.85); transform: rotate(-3deg); }
-.gallery img, .gallery video { width: 100%; display: block; background: var(--ink); filter: grayscale(1) contrast(1.12); }
+.gallery img, .gallery video { width: 100%; min-height: 220px; display: block; background: #222; filter: grayscale(1) contrast(1.12); }
 .gallery figcaption { margin-top: 10px; font-size: 14px; }
 
 /* band */

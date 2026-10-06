@@ -50,7 +50,7 @@ export default async function Home() {
     <div className="site">
       <header className="hero wrap" id="top">
         <nav className="nav" aria-label="Main">
-          <a href="#top" className="brand disp">No Filter</a>
+          <a href="#top" className="brand" aria-label="No Filter, back to top"><img src="/no-filter-logo.png" alt="No Filter" width="150" height="55" /></a>
           <div className="links type">
             <a href="#shows">Shows</a>
             <a href="#sound">Sound</a>

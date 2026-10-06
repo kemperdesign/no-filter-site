@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { supabase, fileUrl } from '../lib/supabase';
 import Player from './Player';
+import Gallery from './Gallery';
 
 export const revalidate = 30;
 
@@ -291,11 +292,11 @@ export default async function Home() {
 <div style={{ maxWidth: "1240px", margin: "0 auto", padding: "0 28px" }}>
 <span style={{ display: "inline-block", padding: "5px 10px", border: "2px solid #0b0b0b", marginBottom: "22px", font: "14px var(--font-type),monospace", textTransform: "uppercase", letterSpacing: ".08em" }}>Photos</span>
 <h2 style={{ margin: "0", font: "900 clamp(56px,9vw,130px)/.9 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Caught on film.</h2>
-<div style={{ display: "flex", gap: "28px", margin: "56px -28px 0", padding: "8px 28px 28px", overflowX: "auto", scrollSnapType: "x proximity", scrollbarColor: "#0b0b0b transparent" }}>
+<Gallery style={{ display: "flex", gap: "28px", margin: "56px -28px 0", padding: "8px 28px 28px", overflowX: "auto", scrollSnapType: "x proximity", scrollbarColor: "#0b0b0b transparent" }}>
 {photos.map((p, i) => (<Fragment key={i}>
 <figure style={{ margin: "0", flex: "0 0 auto", scrollSnapAlign: "start", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b" }}>{p.kind === 'video' ? <video src={p.u} controls preload="metadata" style={{ height: "380px", width: "auto", maxWidth: "78vw", display: "block", filter: "grayscale(1) contrast(1.12)" }} /> : <img src={p.u} alt="No Filter live" loading="lazy" style={{ height: "380px", width: "auto", maxWidth: "78vw", display: "block", filter: "grayscale(1) contrast(1.12)" }} />}</figure>
 </Fragment>))}
-</div>
+</Gallery>
 </div>
 </section>
 

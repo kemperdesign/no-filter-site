@@ -98,7 +98,7 @@ export default async function Home() {
 </div>
 
 <div id="shows" style={{ flex: "0 1 430px", minWidth: "290px" }}>
-<img src={heroSrc} alt="No Filter on stage" style={{ width: "100%", aspectRatio: "4/3", objectFit: "cover", display: "block", marginBottom: "34px", border: "10px solid #fff", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1.6deg)", filter: "none" }} />
+<img src={heroSrc} alt="No Filter on stage" style={{ width: "100%", aspectRatio: "4/3", objectFit: "cover", display: "block", marginBottom: "34px", border: "10px solid #fff", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1.6deg)", filter: "grayscale(1) contrast(1.15)" }} />
 <div style={{ background: '#fff', border: '3px solid #0b0b0b', boxShadow: '10px 10px 0 #0b0b0b', transform: 'rotate(1.4deg)' }}>
 <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 20px', background: '#0b0b0b', color: '#fff', font: "13px var(--font-type),monospace", textTransform: 'uppercase', letterSpacing: '.08em' }}><span>Next show</span><span>Admit one</span></div>
 <div style={{ padding: '18px 22px 8px' }}>
@@ -137,7 +137,7 @@ export default async function Home() {
 <div style={{ maxWidth: "1240px", margin: "0 auto", padding: "0 28px" }}>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(300px,100%),1fr))", gap: "40px 56px", alignItems: "center" }}><div><span style={{ display: "inline-block", padding: "5px 10px", border: "2px solid #0b0b0b", marginBottom: "22px", font: "14px var(--font-type),monospace", textTransform: "uppercase", letterSpacing: ".08em" }}>Upcoming shows</span>
 <h2 style={{ margin: "0", maxWidth: "14ch", font: "900 clamp(56px,9vw,130px)/.9 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Catch the unfiltered live sound.</h2>
-<p style={{ margin: "28px 0 0", fontSize: "22px", lineHeight: "1.45", maxWidth: "56ch" }}>Experience the high-energy live performance that spreads through the crowd from the very first note. Check out where we are playing next, bring your friends, and get ready for an unforgettable night of live music.</p></div><figure style={{ margin: "0", justifySelf: "end", width: "100%", maxWidth: "340px", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1.6deg)" }}><img src="/img/members-neon.jpg" alt="No Filter band members" style={{ width: "100%", display: "block", filter: "none" }} /></figure></div>
+<p style={{ margin: "28px 0 0", fontSize: "22px", lineHeight: "1.45", maxWidth: "56ch" }}>Experience the high-energy live performance that spreads through the crowd from the very first note. Check out where we are playing next, bring your friends, and get ready for an unforgettable night of live music.</p></div><figure style={{ margin: "0", justifySelf: "end", width: "100%", maxWidth: "340px", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1.6deg)" }}><img src="/img/members-neon.jpg" alt="No Filter band members" style={{ width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} /></figure></div>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(280px,100%),1fr))", gap: "40px 56px", alignItems: "center", marginTop: "72px" }}>
 <div><h3 style={{ margin: "0", font: "900 clamp(36px,5vw,64px)/.95 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Live dates and appearances</h3>
 <p style={{ margin: "16px 0 0", fontSize: "19px", lineHeight: "1.5", maxWidth: "60ch" }}>From lively local bar nights to major festivals and high-energy private parties, find out where we are bringing the party next across Florida and beyond.</p></div>
@@ -145,15 +145,15 @@ export default async function Home() {
 </div>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(280px,100%),1fr))", gap: "40px 32px", marginTop: "48px" }}>
 <figure style={{ margin: "0", background: "#fff", padding: "12px 12px 22px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1deg)" }}>
-<img src="/img/festivals.jpg" alt="Festivals and big stages" style={{ width: "100%", display: "block", filter: "none" }} />
+<img src="/img/festivals.jpg" alt="Festivals and big stages" style={{ width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} />
 <h4 style={{ margin: "18px 0 8px", font: "900 34px/1 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Festivals and big stages</h4>
 <p style={{ margin: "0", fontSize: "17px", lineHeight: "1.5" }}>Catch us on main stages pumping electrifying sets that get entire crowds moving together.</p></figure>
 <figure style={{ margin: "0", background: "#fff", padding: "12px 12px 22px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1deg)" }}>
-<img src="/img/bars-hotels.jpg" alt="Bars and hotel gigs" style={{ width: "100%", aspectRatio: "1.4286", objectFit: "cover", display: "block", filter: "none" }} />
+<img src="/img/bars-hotels.jpg" alt="Bars and hotel gigs" style={{ width: "100%", aspectRatio: "1.4286", objectFit: "cover", display: "block", filter: "grayscale(1) contrast(1.12)" }} />
 <h4 style={{ margin: "18px 0 8px", font: "900 34px/1 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Bars and hotel gigs</h4>
 <p style={{ margin: "0", fontSize: "17px", lineHeight: "1.5" }}>Most of our bar and hotel establishment shows are completely free for fans, though venue surcharges may apply.</p></figure>
 <figure style={{ margin: "0", background: "#fff", padding: "12px 12px 22px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-.8deg)" }}>
-<img src="/img/parties.jpg" alt="Parties and private events" style={{ width: "100%", display: "block", filter: "none" }} />
+<img src="/img/parties.jpg" alt="Parties and private events" style={{ width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} />
 <h4 style={{ margin: "18px 0 8px", font: "900 34px/1 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Parties and private events</h4>
 <p style={{ margin: "0 0 16px", fontSize: "17px", lineHeight: "1.5" }}>We bring our signature infectious stage vibe directly to large corporate events and private gatherings.</p>
 <a href="mailto:david@hcsgraphix.com" style={{ display: "inline-block", fontWeight: "800", textTransform: "uppercase", letterSpacing: ".06em", fontSize: "14px", textDecoration: "none", borderBottom: "3px solid #0b0b0b" }}>Book the band</a></figure>
@@ -173,7 +173,7 @@ export default async function Home() {
 <p style={{ margin: "16px 0 0", fontSize: "19px", lineHeight: "1.55", maxWidth: "52ch" }}>Are you a venue owner, event organizer or festival promoter looking to book No Filter Music? Contact Phillip David Hughes directly at (904) 571-0011 in Jacksonville, Florida 32205 to arrange dates and details.</p>
 <a href="tel:+19045710011" style={{ display: "inline-block", marginTop: "24px", padding: "15px 26px", fontWeight: "800", textTransform: "uppercase", letterSpacing: ".06em", textDecoration: "none", border: "3px solid #0b0b0b", background: "#0b0b0b", color: "#fff", boxShadow: "6px 6px 0 #8a8a8a" }}>Call now</a>
 </div>
-<img src="/img/live.jpg" alt="No Filter live" style={{ width: "100%", display: "block", border: "10px solid #fff", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1.2deg)", filter: "none" }} />
+<img src="/img/live.jpg" alt="No Filter live" style={{ width: "100%", display: "block", border: "10px solid #fff", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1.2deg)", filter: "grayscale(1) contrast(1.12)" }} />
 </div>
 </div>
 </section>
@@ -181,7 +181,7 @@ export default async function Home() {
 <section id="sound" style={{ padding: "100px 0" }}>
 <div style={{ maxWidth: "1240px", margin: "0 auto", padding: "0 28px" }}>
 <div style={{ display: "flex", flexWrap: "wrap", gap: "40px 56px", alignItems: "flex-end", justifyContent: "space-between" }}><div style={{ flex: "1 1 420px", minWidth: "0" }}><span style={{ display: "inline-block", padding: "5px 10px", border: "2px solid #0b0b0b", marginBottom: "22px", font: "14px var(--font-type),monospace", textTransform: "uppercase", letterSpacing: ".08em" }}>Side A / the set list</span>
-<h2 style={{ margin: "0", maxWidth: "12ch", font: "900 clamp(56px,9vw,130px)/.9 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Something for everybody on the dance floor.</h2></div><figure style={{ margin: "0", flex: "0 1 300px", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1.6deg)" }}><img src="/img/festival-stage.jpg" alt="Festival stage with No Filter on the big screen" style={{ width: "100%", maxHeight: "420px", objectFit: "cover", objectPosition: "top", display: "block", filter: "none" }} /></figure></div>
+<h2 style={{ margin: "0", maxWidth: "12ch", font: "900 clamp(56px,9vw,130px)/.9 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Something for everybody on the dance floor.</h2></div><figure style={{ margin: "0", flex: "0 1 300px", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1.6deg)" }}><img src="/img/festival-stage.jpg" alt="Festival stage with No Filter on the big screen" style={{ width: "100%", maxHeight: "420px", objectFit: "cover", objectPosition: "top", display: "block", filter: "grayscale(1) contrast(1.12)" }} /></figure></div>
 <div style={{ marginTop: "56px", borderTop: "3px solid #0b0b0b" }}>
 {sounds.map((s, i) => (<Fragment key={i}>
 <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 40px", alignItems: "baseline", justifyContent: "space-between", padding: "22px 12px", borderBottom: "3px solid #0b0b0b" }} className="hv2">
@@ -211,7 +211,7 @@ export default async function Home() {
 </div>
 <div style={{ alignSelf: "center" }}>
 <figure style={{ margin: "0", background: "#fff", color: "#0b0b0b", padding: "12px 12px 14px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #444", transform: "rotate(-1.4deg)", maxWidth: "520px" }}>
-<img src="/img/studio-events.jpg" alt="Studio events" style={{ width: "100%", aspectRatio: "1.4286", objectFit: "cover", display: "block", filter: "none" }} />
+<img src="/img/studio-events.jpg" alt="Studio events" style={{ width: "100%", aspectRatio: "1.4286", objectFit: "cover", display: "block", filter: "grayscale(1) contrast(1.12)" }} />
 <figcaption style={{ marginTop: "10px", font: "14px var(--font-type),monospace", textTransform: "uppercase", letterSpacing: ".08em" }}>Studio events</figcaption></figure>
 </div>
 
@@ -222,16 +222,16 @@ export default async function Home() {
 <div style={{ maxWidth: "1240px", margin: "0 auto", padding: "0 28px" }}>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(300px,100%),1fr))", gap: "40px 56px", alignItems: "center" }}><div><span style={{ display: "inline-block", padding: "5px 10px", border: "2px solid #0b0b0b", marginBottom: "22px", font: "14px var(--font-type),monospace", textTransform: "uppercase", letterSpacing: ".08em" }}>Music downloads</span>
 <h2 style={{ margin: "0", maxWidth: "12ch", font: "900 clamp(56px,9vw,130px)/.9 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Raw sound, ready to download.</h2>
-<p style={{ margin: "28px 0 0", fontSize: "22px", lineHeight: "1.45", maxWidth: "56ch" }}>Welcome to the official music hub for No Filter Music in Jacksonville, Florida. Grab our high-energy blues and southern rock tracks for free, crank up the volume, and get a taste of the raw power we bring straight to the stage.</p></div><figure style={{ margin: "0", justifySelf: "end", width: "100%", maxWidth: "360px", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1.6deg)" }}><img src="/img/guitarist.jpg" alt="No Filter guitarist on stage" style={{ width: "100%", display: "block", filter: "none" }} /></figure></div>
+<p style={{ margin: "28px 0 0", fontSize: "22px", lineHeight: "1.45", maxWidth: "56ch" }}>Welcome to the official music hub for No Filter Music in Jacksonville, Florida. Grab our high-energy blues and southern rock tracks for free, crank up the volume, and get a taste of the raw power we bring straight to the stage.</p></div><figure style={{ margin: "0", justifySelf: "end", width: "100%", maxWidth: "360px", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1.6deg)" }}><img src="/img/guitarist.jpg" alt="No Filter guitarist on stage" style={{ width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} /></figure></div>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(300px,100%),1fr))", gap: "56px 48px", marginTop: "72px", alignItems: "start" }}>
 <div>
-<img src="/img/playlist.jpg" alt="Playlist vibe" style={{ width: "100%", aspectRatio: "4/3", objectFit: "cover", display: "block", border: "10px solid #fff", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1.2deg)", filter: "none" }} />
+<img src="/img/playlist.jpg" alt="Playlist vibe" style={{ width: "100%", aspectRatio: "4/3", objectFit: "cover", display: "block", border: "10px solid #fff", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1.2deg)", filter: "grayscale(1) contrast(1.12)" }} />
 <h3 style={{ margin: "40px 0 0", font: "900 clamp(34px,4vw,52px)/.95 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Add the vibe to your personal playlists</h3>
 <p style={{ margin: "16px 0 0", fontSize: "19px", lineHeight: "1.55", maxWidth: "52ch" }}>Take our music wherever you go. Drop these free downloads straight into your everyday playlist, and stay tuned across all major digital platforms. Follow No Filter Music on Spotify, YouTube and our social channels to stream new drops, behind-the-scenes studio sessions and fresh releases.</p>
 <a href={trackUrl("Your Baby, My Baby Too")} download style={{ display: "inline-block", marginTop: "22px", padding: "15px 26px", fontWeight: "800", textTransform: "uppercase", letterSpacing: ".06em", textDecoration: "none", border: "3px solid #0b0b0b", background: "#0b0b0b", color: "#fff", boxShadow: "6px 6px 0 #8a8a8a" }}>Your Baby, My Baby Too</a>
 </div>
 <div>
-<img src="/img/guitarists.jpg" alt="Guitarists on stage" style={{ width: "100%", aspectRatio: "4/3", objectFit: "cover", display: "block", border: "10px solid #fff", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1.2deg)", filter: "none" }} />
+<img src="/img/guitarists.jpg" alt="Guitarists on stage" style={{ width: "100%", aspectRatio: "4/3", objectFit: "cover", display: "block", border: "10px solid #fff", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1.2deg)", filter: "grayscale(1) contrast(1.12)" }} />
 <h3 style={{ margin: "40px 0 0", font: "900 clamp(34px,4vw,52px)/.95 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Experience the energy live in concert</h3>
 <p style={{ margin: "16px 0 0", fontSize: "19px", lineHeight: "1.55", maxWidth: "52ch" }}>Listening through your headphones is only the beginning. Nothing matches the thunderous rhythm and electric atmosphere of our live performances. After you grab your free tracks, come feel the high-energy blues and southern rock live and in person.</p>
 <div style={{ display: "flex", flexWrap: "wrap", gap: "14px", marginTop: "22px" }}>
@@ -241,8 +241,8 @@ export default async function Home() {
 </div>
 </div>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(300px,100%),1fr))", gap: "34px", marginTop: "80px", alignItems: "start" }}>
-<figure style={{ margin: "0", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1deg)" }}><img src="/img/hardrock-stage.jpg" alt="No Filter on stage at Hard Rock Cafe" style={{ width: "100%", display: "block", filter: "none" }} /></figure>
-<figure style={{ margin: "0", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1deg)" }}><img src="/img/outdoor-stage.jpg" alt="Guitarist on an outdoor stage" style={{ width: "100%", display: "block", filter: "none" }} /></figure>
+<figure style={{ margin: "0", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1deg)" }}><img src="/img/hardrock-stage.jpg" alt="No Filter on stage at Hard Rock Cafe" style={{ width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} /></figure>
+<figure style={{ margin: "0", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1deg)" }}><img src="/img/outdoor-stage.jpg" alt="Guitarist on an outdoor stage" style={{ width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} /></figure>
 </div>
 </div>
 </section>
@@ -251,20 +251,20 @@ export default async function Home() {
 <div style={{ maxWidth: "1240px", margin: "0 auto", padding: "0 28px" }}>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(300px,100%),1fr))", gap: "40px 56px", alignItems: "center" }}><div><span style={{ display: "inline-block", padding: "5px 10px", border: "2px solid #0b0b0b", marginBottom: "22px", font: "14px var(--font-type),monospace", textTransform: "uppercase", letterSpacing: ".08em" }}>Studio events</span>
 <h2 style={{ margin: "0", font: "900 clamp(56px,9vw,130px)/.9 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Inside the studio.</h2>
-<p style={{ margin: "28px 0 0", fontSize: "22px", lineHeight: "1.45", maxWidth: "56ch" }}>Step behind the console with No Filter Music in Jacksonville, Florida. From dedicated session work to exclusive live jam sessions, experience the raw craft, creative energy and technical mastery of real music making.</p></div><figure style={{ margin: "0", justifySelf: "end", width: "100%", maxWidth: "340px", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1.4deg)" }}><img src="/img/bassist.jpg" alt="No Filter bassist on stage" style={{ width: "100%", display: "block", filter: "none" }} /></figure></div>
+<p style={{ margin: "28px 0 0", fontSize: "22px", lineHeight: "1.45", maxWidth: "56ch" }}>Step behind the console with No Filter Music in Jacksonville, Florida. From dedicated session work to exclusive live jam sessions, experience the raw craft, creative energy and technical mastery of real music making.</p></div><figure style={{ margin: "0", justifySelf: "end", width: "100%", maxWidth: "340px", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1.4deg)" }}><img src="/img/bassist.jpg" alt="No Filter bassist on stage" style={{ width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} /></figure></div>
 <h3 style={{ margin: "72px 0 0", font: "900 clamp(36px,5vw,64px)/.95 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Studio sessions and gatherings</h3>
 <p style={{ margin: "16px 0 0", fontSize: "19px", lineHeight: "1.5", maxWidth: "60ch" }}>We bring musicians, collaborators and music lovers together to witness and take part in the true recording process. Discover what happens inside our Jacksonville studio.</p>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(280px,100%),1fr))", gap: "40px 32px", marginTop: "48px" }}>
 <figure style={{ margin: "0", background: "#fff", padding: "12px 12px 22px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1deg)" }}>
-<img src="/img/session-work.jpg" alt="Session work" style={{ aspectRatio: "1.4286", objectFit: "cover", objectPosition: "center 40%", width: "100%", display: "block", filter: "none" }} />
+<img src="/img/session-work.jpg" alt="Session work" style={{ aspectRatio: "1.4286", objectFit: "cover", objectPosition: "center 40%", width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} />
 <h4 style={{ margin: "18px 0 8px", font: "900 34px/1 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Session work</h4>
 <p style={{ margin: "0", fontSize: "17px", lineHeight: "1.5" }}>We offer focused studio recording and production sessions, capturing polished tracks with seasoned musicianship and high-end gear.</p></figure>
 <figure style={{ margin: "0", background: "#fff", padding: "12px 12px 22px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1deg)" }}>
-<img src="/img/jam.jpg" alt="Open jam nights" style={{ width: "100%", display: "block", filter: "none" }} />
+<img src="/img/jam.jpg" alt="Open jam nights" style={{ width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} />
 <h4 style={{ margin: "18px 0 8px", font: "900 34px/1 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Open jam nights</h4>
 <p style={{ margin: "0", fontSize: "17px", lineHeight: "1.5" }}>Occasionally we host relaxed studio jams where fellow artists are welcome to sit in, collaborate, and even record their performances.</p></figure>
 <figure style={{ margin: "0", background: "#fff", padding: "12px 12px 22px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-.8deg)" }}>
-<img src="/img/behind-board.jpg" alt="Behind the board" style={{ width: "100%", display: "block", filter: "none" }} />
+<img src="/img/behind-board.jpg" alt="Behind the board" style={{ width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} />
 <h4 style={{ margin: "18px 0 8px", font: "900 34px/1 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Behind the board</h4>
 <p style={{ margin: "0", fontSize: "17px", lineHeight: "1.5" }}>Get a firsthand look at the expertise and meticulous detail that go into engineering, tracking and mixing dynamic original tracks.</p></figure>
 </div>
@@ -275,7 +275,7 @@ export default async function Home() {
 <div style={{ maxWidth: "1240px", margin: "0 auto", padding: "0 28px" }}>
 <h2 style={{ margin: "0 0 48px", font: "900 clamp(48px,7vw,96px)/.9 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Support live independent music.</h2>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(280px,100%),1fr))", gap: "48px", alignItems: "start" }}>
-<img src="/img/band-onstage.jpg" alt="No Filter band on stage" style={{ width: "100%", display: "block", border: "10px solid #fff", boxShadow: "8px 8px 0 #0b0b0b", filter: "none" }} />
+<img src="/img/band-onstage.jpg" alt="No Filter band on stage" style={{ width: "100%", display: "block", border: "10px solid #fff", boxShadow: "8px 8px 0 #0b0b0b", filter: "grayscale(1) contrast(1.12)" }} />
 <div>
 <h3 style={{ margin: "0", font: "900 clamp(34px,4vw,52px)/.95 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>An authentic creative process</h3>
 <p style={{ margin: "16px 0 0", fontSize: "19px", lineHeight: "1.55", maxWidth: "52ch" }}>Attending a studio event at No Filter Music provides an up-close appreciation for the technical skill, precision and passion poured into sound production. It is a genuine look into the artistry behind every track we produce.</p>
@@ -293,7 +293,7 @@ export default async function Home() {
 <h2 style={{ margin: "0", font: "900 clamp(56px,9vw,130px)/.9 var(--font-display),Impact,sans-serif", textTransform: "uppercase" }}>Caught on film.</h2>
 <div style={{ display: "flex", gap: "28px", margin: "56px -28px 0", padding: "8px 28px 28px", overflowX: "auto", scrollSnapType: "x proximity", scrollbarColor: "#0b0b0b transparent" }}>
 {photos.map((p, i) => (<Fragment key={i}>
-<figure style={{ margin: "0", flex: "0 0 auto", scrollSnapAlign: "start", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b" }}>{p.kind === 'video' ? <video src={p.u} controls preload="metadata" style={{ height: "380px", width: "auto", maxWidth: "78vw", display: "block", filter: "none" }} /> : <img src={p.u} alt="No Filter live" loading="lazy" style={{ height: "380px", width: "auto", maxWidth: "78vw", display: "block", filter: "none" }} />}</figure>
+<figure style={{ margin: "0", flex: "0 0 auto", scrollSnapAlign: "start", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b" }}>{p.kind === 'video' ? <video src={p.u} controls preload="metadata" style={{ height: "380px", width: "auto", maxWidth: "78vw", display: "block", filter: "grayscale(1) contrast(1.12)" }} /> : <img src={p.u} alt="No Filter live" loading="lazy" style={{ height: "380px", width: "auto", maxWidth: "78vw", display: "block", filter: "grayscale(1) contrast(1.12)" }} />}</figure>
 </Fragment>))}
 </div>
 </div>
@@ -308,7 +308,7 @@ export default async function Home() {
 <div key={m.id} className={bi === 1 ? 'band-mid' : undefined}>
 <div style={{ border: '3px solid #0b0b0b', boxShadow: '10px 10px 0 #0b0b0b', background: '#fff', padding: 10 }}>
 {m.photo_path ? (
-<img src={fileUrl('nf-media', m.photo_path)} alt={m.name} loading="lazy" style={{ display: 'block', width: '100%', aspectRatio: '3/4', objectFit: 'cover', filter: 'none' }} />
+<img src={fileUrl('nf-media', m.photo_path)} alt={m.name} loading="lazy" style={{ display: 'block', width: '100%', aspectRatio: '3/4', objectFit: 'cover', filter: 'grayscale(1) contrast(1.15)' }} />
 ) : (
 <div style={{ aspectRatio: '3/4', background: 'repeating-linear-gradient(135deg,#111 0 14px,#2b2b2b 14px 28px)' }} />
 )}

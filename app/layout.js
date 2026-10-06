@@ -9,7 +9,7 @@ const type = Special_Elite({ weight: '400', subsets: ['latin'], variable: '--fon
 export const metadata = {
   title: 'No Filter Music',
   description:
-    'No Filter is a Jacksonville dance band playing classic rock, oldies and country. See upcoming shows, hear original tracks, and book the band.',
+    'No Filter is a Jacksonville dance band playing classic rock and oldies. See upcoming shows, hear original tracks, and book the band.',
 };
 
 export default function RootLayout({ children }) {

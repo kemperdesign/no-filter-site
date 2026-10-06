@@ -43,42 +43,57 @@ export default async function Home() {
   const phoneDigits = (s.phone || '').replace(/\D/g, '');
   const mapQuery = next ? [next.venue, next.address, next.city].filter(Boolean).join(' ') : '';
 
+  const words = ['Live music', 'Classic rock', 'Oldies', 'Country', 'Originals', 'Jacksonville, FL'];
+  const ticker = [...words, ...words];
+
   return (
-    <>
-      <header className="hero" id="top">
-        <div className="wrap">
-          <nav className="nav" aria-label="Main">
-            <a href="#top" className="brand slab">No Filter</a>
-            <div className="links">
-              <a href="#shows">Shows</a>
-              <a href="#sound">Sound</a>
-              <a href="#studio">Studio</a>
-              <a href="#downloads">Downloads</a>
-              {gallery.length > 0 && <a href="#gallery">Photos</a>}
-              <a href="#band">Band</a>
-              <a href="#book" className="cta">Book the band</a>
-            </div>
-          </nav>
+    <div className="site">
+      <header className="hero wrap" id="top">
+        <nav className="nav" aria-label="Main">
+          <a href="#top" className="brand disp">No Filter</a>
+          <div className="links type">
+            <a href="#shows">Shows</a>
+            <a href="#sound">Sound</a>
+            <a href="#studio">Studio</a>
+            <a href="#downloads">Downloads</a>
+            {gallery.length > 0 && <a href="#gallery">Photos</a>}
+            <a href="#band">Band</a>
+            <a href="#book" className="cta">Book the band</a>
+          </div>
+        </nav>
 
-          <div className="hero-grid">
-            <div className="hero-copy">
-              <h1 className="slab">No<br />Filter</h1>
-              <p className="tag">{s.tagline}</p>
-              <div className="btns">
-                <a className="btn solid" href="#shows">See the next show</a>
-                <a className="btn line" href="#downloads">Download original tracks</a>
-              </div>
-            </div>
+        <h1 className="mega disp" aria-label="No Filter">
+          <span>No</span>
+          <span className="l2">Filter</span>
+        </h1>
 
-            <div className="hero-side" id="shows">
-              {hero && <img className="hero-photo" src={fileUrl('nf-media', hero.file_path)} alt={hero.caption || 'No Filter on stage'} />}
-              <div className="ticket">
-                <div className="label">Next show</div>
+        <div className="hero-row">
+          <div className="hero-copy">
+            <p className="tag">{s.tagline}</p>
+            <div className="btns">
+              <a className="btn solid" href="#shows">See the next show</a>
+              <a className="btn line" href="#downloads">Free original tracks</a>
+            </div>
+          </div>
+
+          <div className="hero-side" id="shows">
+            {hero && <img className="hero-photo" src={fileUrl('nf-media', hero.file_path)} alt={hero.caption || 'No Filter on stage'} />}
+            <div className="ticket">
+              <div className="top type"><span>Next show</span><span>Admit one</span></div>
+              <div className="body">
                 {next ? (
                   <>
-                    <div className="date slab">{dateParts(next.show_date).short}</div>
-                    <hr />
-                    <div className="venue slab">{next.venue}</div>
+                    <div className="date disp">{dateParts(next.show_date).short}</div>
+                    <div className="venue disp">{next.venue}</div>
+                  </>
+                ) : (
+                  <div className="date disp" style={{ fontSize: 64 }}>New dates soon</div>
+                )}
+                <hr className="perf" />
+              </div>
+              <div className="stub">
+                {next ? (
+                  <>
                     <p>
                       {next.start_time && <>{next.start_time}<br /></>}
                       {next.address && <>{next.address}<br /></>}
@@ -88,36 +103,39 @@ export default async function Home() {
                     <a className="dir" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`}>Get directions</a>
                   </>
                 ) : (
-                  <>
-                    <div className="date slab" style={{ fontSize: 44 }}>New dates soon</div>
-                    <hr />
-                    <p>Call or email to book the band.</p>
-                  </>
+                  <p>Call or email to book the band.</p>
                 )}
               </div>
-              {later.length > 0 && (
-                <div className="more">
-                  <b>More dates</b>
-                  {later.map((sh) => (
-                    <div key={sh.id}>{dateParts(sh.show_date).long}: {sh.venue}{sh.city ? `, ${sh.city}` : ''}</div>
-                  ))}
-                </div>
-              )}
             </div>
+            {later.length > 0 && (
+              <div className="more">
+                <b className="type">More dates</b>
+                {later.map((sh) => (
+                  <div key={sh.id}>{dateParts(sh.show_date).long}: {sh.venue}{sh.city ? `, ${sh.city}` : ''}</div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </header>
 
-      <div className="strip slab">Classic rock. Oldies. Country. Originals always welcome.</div>
+      <div className="marquee" aria-hidden="true">
+        <div className="track-m disp">
+          {[...ticker, ...ticker].map((w, i) => (
+            <span key={i}>{w}<i>{' ★'}</i></span>
+          ))}
+        </div>
+      </div>
 
       <section id="sound">
         <div className="wrap">
-          <h2 className="slab big" style={{ maxWidth: '16ch' }}>Something for everybody on the dance floor.</h2>
-          <div className="cards">
-            <div className="card c1"><div className="t slab">Classic rock</div><p>The songs everyone in the room already knows the words to.</p></div>
-            <div className="card c2"><div className="t slab">Oldies</div><p>Good-time favorites that get people out of their chairs.</p></div>
-            <div className="card c3"><div className="t slab">Country</div><p>A little twang in every set, for the two-steppers.</p></div>
-            <div className="card c4"><div className="t slab">Originals</div><p>The band records its own songs in the studio. Originals are always welcome.</p></div>
+          <span className="kicker type">Side A / the set list</span>
+          <h2 className="disp big" style={{ maxWidth: '12ch' }}>Something for everybody on the dance floor.</h2>
+          <div className="sound-list">
+            <div className="sound-row"><h3 className="disp">Classic rock</h3><p>The songs everyone in the room already knows the words to.</p></div>
+            <div className="sound-row"><h3 className="disp">Oldies</h3><p>Good-time favorites that get people out of their chairs.</p></div>
+            <div className="sound-row"><h3 className="disp">Country</h3><p>A little twang in every set, for the two-steppers.</p></div>
+            <div className="sound-row"><h3 className="disp">Originals</h3><p>The band records its own songs in the studio. Originals are always welcome.</p></div>
           </div>
         </div>
       </section>
@@ -125,24 +143,26 @@ export default async function Home() {
       <section className="dark">
         <div className="wrap two">
           <div id="studio">
-            <h2 className="slab">Things are happening in the studio.</h2>
-            <div style={{ marginTop: 28 }}>
-              {news.length === 0 && <p style={{ fontSize: 20 }}>New studio news is on the way.</p>}
+            <span className="kicker type">Side B / liner notes</span>
+            <h2 className="disp">Things are happening in the studio.</h2>
+            <div style={{ marginTop: 36 }}>
+              {news.length === 0 && <p className="news-empty">New studio news is on the way.</p>}
               {news.map((n) => (
                 <article className="news-item" key={n.id}>
-                  <h3 className="slab">{n.title}</h3>
-                  <div className="when">{new Date(n.posted_at).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'America/New_York' })}</div>
+                  <h3 className="disp">{n.title}</h3>
+                  <div className="when type">{new Date(n.posted_at).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'America/New_York' })}</div>
                   <p>{n.body}</p>
                 </article>
               ))}
             </div>
           </div>
           <div id="downloads">
-            <h2 className="slab sub">Free original tracks</h2>
+            <h2 className="disp sub">Free original tracks</h2>
             {tracks.length === 0 && <p>New tracks are coming soon.</p>}
             {tracks.map((t) => (
               <div className="track" key={t.id}>
-                <div className="name slab">{t.title}</div>
+                <div className="record" aria-hidden="true" />
+                <div className="name disp">{t.title}</div>
                 <a href={t.external_url || fileUrl('nf-tracks', t.file_path)} download>Download</a>
               </div>
             ))}
@@ -153,7 +173,8 @@ export default async function Home() {
       {gallery.length > 0 && (
         <section id="gallery">
           <div className="wrap">
-            <h2 className="slab big">Live and loud.</h2>
+            <span className="kicker type">Caught on film</span>
+            <h2 className="disp big">Live and loud.</h2>
             <div className="gallery">
               {gallery.map((m) => (
                 <figure key={m.id}>
@@ -162,7 +183,7 @@ export default async function Home() {
                   ) : (
                     <img src={fileUrl('nf-media', m.file_path)} alt={m.caption || 'No Filter'} loading="lazy" />
                   )}
-                  {m.caption && <figcaption>{m.caption}</figcaption>}
+                  {m.caption && <figcaption className="type">{m.caption}</figcaption>}
                 </figure>
               ))}
             </div>
@@ -172,17 +193,20 @@ export default async function Home() {
 
       <section id="band" style={gallery.length > 0 ? { paddingTop: 0 } : undefined}>
         <div className="wrap">
-          <h2 className="slab big">Three guys. One loud room.</h2>
+          <span className="kicker type">The band</span>
+          <h2 className="disp big">Three guys. One loud room.</h2>
           <div className="band">
             {band.map((m) => (
               <div key={m.id}>
-                {m.photo_path ? (
-                  <img className="ph" src={fileUrl('nf-media', m.photo_path)} alt={m.name} loading="lazy" />
-                ) : (
-                  <div className="ph">Photo of {m.name}</div>
-                )}
-                <div className="n slab">{m.name}</div>
-                <div className="r">{m.role}</div>
+                <div className="frame">
+                  {m.photo_path ? (
+                    <img className="ph" src={fileUrl('nf-media', m.photo_path)} alt={m.name} loading="lazy" />
+                  ) : (
+                    <div className="ph type">Photo of {m.name}</div>
+                  )}
+                </div>
+                <div className="n disp">{m.name}</div>
+                <div className="r type">{m.role}</div>
               </div>
             ))}
           </div>
@@ -192,18 +216,21 @@ export default async function Home() {
       <section className="book" id="book">
         <div className="wrap row">
           <div className="l">
-            <h2 className="slab">Book No Filter.</h2>
+            <h2 className="disp">Book No Filter.</h2>
             <p>For a bar, a private party or a festival stage, call or email David Hughes.</p>
           </div>
           <div className="r">
-            <a className="phone slab" href={`tel:+1${phoneDigits}`}>{s.phone}</a>
-            <a className="mail slab" href={`mailto:${s.email}`}>{s.email}</a>
-            <p>Studio: {s.studio_address}</p>
+            <a className="phone disp" href={`tel:+1${phoneDigits}`}>{s.phone}</a>
+            <a className="mail" href={`mailto:${s.email}`}>{s.email}</a>
+            <p className="type">Studio: {s.studio_address}</p>
           </div>
         </div>
       </section>
 
-      <footer>&copy; 2026 No Filter Music. Live in Jacksonville, Florida.</footer>
-    </>
+      <footer className="type">
+        <span>&copy; 2026 No Filter Music</span>
+        <span>Live in Jacksonville, Florida</span>
+      </footer>
+    </div>
   );
 }

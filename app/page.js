@@ -350,7 +350,7 @@ export default async function Home() {
 </section>
 
 <footer style={{ background: "#0b0b0b", color: "#fff", padding: "26px 28px", display: "flex", flexWrap: "wrap", gap: "8px 24px", justifyContent: "space-between", font: "13px var(--font-type),monospace", textTransform: "uppercase", letterSpacing: ".08em" }}>
-<span>© 2026 No Filter Music</span><span>Live in Jacksonville, Florida</span>
+<span>© 2026 No Filter Music</span><span>Live in Jacksonville, Florida</span><span>Website by <a href="https://kemperdesignservices.com" target="_blank" rel="noopener" style={{ color: "inherit", borderBottom: "1px solid currentColor", textDecoration: "none" }}>kemperdesignservices.com</a></span>
 </footer>
       </div>
     </div>

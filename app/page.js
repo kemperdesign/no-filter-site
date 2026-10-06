@@ -242,7 +242,7 @@ export default async function Home() {
 </div>
 </div>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(300px,100%),1fr))", gap: "34px", marginTop: "80px", alignItems: "start" }}>
-<figure style={{ margin: "0", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1deg)" }}><img src="/img/hardrock-stage.jpg" alt="No Filter on stage at Hard Rock Cafe" style={{ width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} /></figure>
+<figure style={{ margin: "0", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(-1deg)" }}><img src="/img/hardrock-stage.jpg" alt="No Filter on stage at Hard Rock Cafe" style={{ width: "100%", display: "block", filter: "none" }} /></figure>
 <figure style={{ margin: "0", background: "#fff", padding: "12px", border: "3px solid #0b0b0b", boxShadow: "8px 8px 0 #0b0b0b", transform: "rotate(1deg)" }}><img src="/img/outdoor-stage.jpg" alt="Guitarist on an outdoor stage" style={{ width: "100%", display: "block", filter: "grayscale(1) contrast(1.12)" }} /></figure>
 </div>
 </div>

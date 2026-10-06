@@ -340,9 +340,9 @@ export default async function Home() {
 <p style={{ margin: "28px 0 0", fontSize: "22px", lineHeight: "1.45", maxWidth: "34ch" }}>For a bar, a private party or a festival stage, call or email David Hughes.</p>
 </div>
 <div style={{ flex: "0 1 540px", minWidth: "260px" }}>
-<a href={`tel:+1${phoneDigits}`} style={{ display: "block", font: "900 clamp(48px,7vw,96px)/.95 var(--font-display),Impact,sans-serif", textTransform: "uppercase", textDecoration: "none" }}>&#123;s.phone&#125;</a>
-<a href={`mailto:${s.email}`} style={{ display: "inline-block", marginTop: "10px", fontWeight: "800", fontSize: "clamp(20px,2.4vw,28px)", overflowWrap: "anywhere", borderBottom: "3px solid #0b0b0b", textDecoration: "none" }}>&#123;s.email&#125;</a>
-<p style={{ margin: "22px 0 0", font: "14px/1.5 var(--font-type),monospace", textTransform: "uppercase", letterSpacing: ".08em" }}>Studio: &#123;s.studio_address&#125;</p>
+<a href={`tel:+1${phoneDigits}`} style={{ display: "block", font: "900 clamp(48px,7vw,96px)/.95 var(--font-display),Impact,sans-serif", textTransform: "uppercase", textDecoration: "none" }}>{s.phone}</a>
+<a href={`mailto:${s.email}`} style={{ display: "inline-block", marginTop: "10px", fontWeight: "800", fontSize: "clamp(20px,2.4vw,28px)", overflowWrap: "anywhere", borderBottom: "3px solid #0b0b0b", textDecoration: "none" }}>{s.email}</a>
+<p style={{ margin: "22px 0 0", font: "14px/1.5 var(--font-type),monospace", textTransform: "uppercase", letterSpacing: ".08em" }}>Studio: {s.studio_address}</p>
 </div>
 </div>
 <div style={{ maxWidth: "1240px", margin: "56px auto 0", padding: "0 28px", display: "flex", justifyContent: "flex-end" }}>
